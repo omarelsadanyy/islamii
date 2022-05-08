@@ -28,6 +28,9 @@ class SebhaFragment : Fragment() {
         sebha_btn.setOnClickListener {
             number += 1
             sebha_count.text = number.toString()
+            if (number == 33) {
+                number = 0
+            }
         }
         change_mode.setOnClickListener {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
