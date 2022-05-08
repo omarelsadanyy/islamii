@@ -7,8 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.new_islamii.R
 
-class Surahnameadapter(val items: List<String>) :
-    RecyclerView.Adapter<Surahnameadapter.viewholder>() {
+class Surahnameadapter(val items: List<String>) : RecyclerView.Adapter<Surahnameadapter.viewholder>() {
     class viewholder(itemview: View) : RecyclerView.ViewHolder(itemview) {
         val name: TextView = itemview.findViewById(R.id.chapter_name_label)
     }
@@ -40,5 +39,6 @@ class Surahnameadapter(val items: List<String>) :
     }
 
     var onItemclicklistener: OnItemSelectedListiner? = null
-
+  fun nothing() {
+    }
 }
